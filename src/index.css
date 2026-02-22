@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes */
+@layer utilities {
+  .border-gradient-y-primary-secondary {
+    background: linear-gradient(to bottom, theme('colors.primary.500'), theme('colors.secondary.500'));
+    background-clip: padding-box;
+  }
+  
+  .bg-gradient-overlay {
+    background: linear-gradient(to right bottom, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400;
+  }
+  
+  .text-gradient-subtle {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-gray-100 dark:from-gray-300 dark:to-gray-400;
+  }
+  
+  /* Enhanced background animations */
+  .background-pan {
+    background-size: 200% 200%;
+    animation: gradientPan 8s ease infinite;
+  }
+  
+  @keyframes gradientPan {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  
+  /* Glowing text effect */
+  .glow-text {
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+    animation: textPulse 4s ease-in-out infinite;
+  }
+  
+  @keyframes textPulse {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.2)); }
+    50% { filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.4)); }
+  }
+  
+  /* Typewriter effect */
+  .typewriter-text {
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #3b82f6 }
+  }
+  
+  /* Spotlight effect */
+  .spotlight-effect {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .spotlight-effect::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .spotlight-effect:hover::before {
+    opacity: 1;
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-image: linear-gradient(to right, theme('colors.primary.500'), theme('colors.secondary.500'));
+    border-radius: 9999px;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .glow-on-hover:hover {
+    box-shadow: 0 0 15px theme('colors.primary.400');
+  }
+  
+  .scale-up {
+    transition: transform 0.3s ease;
+  }
+  
+  .scale-up:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-shine {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+    transform: skewX(-25deg);
+    transition: 0.7s;
+  }
+  
+  .image-shine:hover::before {
+    animation: shine 1s;
+  }
+  
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+  
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .card-shadow {
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-shadow-hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+}
