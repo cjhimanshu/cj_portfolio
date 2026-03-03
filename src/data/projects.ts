@@ -25,7 +25,7 @@ export const projects = [
     description: "A full-stack MERN hotel booking application with room browsing, real-time reservation, Razorpay payment integration, admin dashboard for managing rooms and bookings, and image upload support.",
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Razorpay", "JWT", "Multer", "Material-UI"],
     image: "/images/projects/hotel-booking.png",
-    liveDemo: "https://hotel-booking-system-one-chi.vercel.app/",
+    liveDemo: "https://hotel-booking-system-eight-self.vercel.app/",
     github: "https://github.com/cjhimanshu/hotel-booking-system",
     featured: true,
   },
