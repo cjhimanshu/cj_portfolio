@@ -305,7 +305,7 @@ const Hero: React.FC = () => {
               {[
                 { href: personalInfo.github, icon: Github, name: 'github', color: 'from-slate-700 to-slate-900' },
                 { href: personalInfo.linkedin, icon: Linkedin, name: 'linkedin', color: 'from-cyan-600 to-cyan-800' },
-                { href: "/resume(himanshu_kumar)1.pdf", icon: Download, name: 'resume', color: 'from-emerald-500 to-emerald-700', download: true }
+                { href: "/resume/resume_2.pdf", icon: Download, name: 'resume', color: 'from-emerald-500 to-emerald-700', download: true }
               ].map((social, index) => (
                 <motion.a
                   key={social.name}
@@ -382,7 +382,7 @@ const Hero: React.FC = () => {
               >
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-white/60 dark:border-slate-700/60 shadow-2xl backdrop-blur-xl">
                   <img 
-                    src="/hsk.jpg" 
+                    src="/images/hsk.jpg" 
                     alt="Himanshu Kumar" 
                     className="w-full h-full object-cover"
                   />

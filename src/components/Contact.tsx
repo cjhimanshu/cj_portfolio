@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
             </h3>
             {/* Profile image */}
             <div className="flex items-center justify-center lg:justify-start mb-6">
-              <img src="/hsk.jpg" alt="Himanshu Kumar" className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700 shadow-md" />
+              <img src="/images/hsk.jpg" alt="Himanshu Kumar" className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700 shadow-md" />
             </div>
 
             <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">

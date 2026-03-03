@@ -303,8 +303,15 @@ const About: React.FC = () => {
                   },
                   {
                     degree: "Intermediate",
-                    school: "Rajo singh college othma",
+                    school: "Bihar Board",
                     period: "2019 - 2021",
+                    icon: <Building size={14} />,
+                    status: "Completed"
+                  },
+                  {
+                    degree: "Class 10th",
+                    school: "CBSE",
+                    period: "2018 - 2019",
                     icon: <Building size={14} />,
                     status: "Completed"
                   }
@@ -406,7 +413,7 @@ const About: React.FC = () => {
             
             {/* Enhanced Resume Button */}
             <motion.a 
-              href="/Resume_solid.pdf" 
+              href="/resume/resume_2.pdf" 
               className="relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-bold rounded-2xl shadow-lg overflow-hidden group"
               target="_blank"
               rel="noopener noreferrer"

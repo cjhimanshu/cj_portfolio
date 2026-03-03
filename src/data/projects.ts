@@ -1,0 +1,32 @@
+export const projects = [
+  {
+    id: 1,
+    title: "Kodbase",
+    description: "A modern web-based code editor with user authentication, project management, and real-time code execution. Supports OAuth login (Google, GitHub, Facebook), Monaco Editor integration, and OTP-based password recovery.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "TailwindCSS", "Monaco Editor", "JWT", "Passport.js"],
+    image: "/images/projects/image.png",
+    liveDemo: "https://kodbase.vercel.app/",
+    github: "https://github.com/cjhimanshu/kodbase",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "RailMadad – AI Railway Complaint System",
+    description: "An AI-integrated MERN stack application that automates Indian Railways complaint management with auto-categorization, sentiment analysis, priority suggestion, and an admin analytics dashboard powered by Hugging Face AI.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Hugging Face AI", "JWT", "Cloudinary", "Recharts"],
+    image: "/images/projects/railmadad.png",
+    liveDemo: "https://railmadad-gamma.vercel.app/",
+    github: "https://github.com/cjhimanshu/railmadad",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Hotel Booking System",
+    description: "A full-stack MERN hotel booking application with room browsing, real-time reservation, Razorpay payment integration, admin dashboard for managing rooms and bookings, and image upload support.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Razorpay", "JWT", "Multer", "Material-UI"],
+    image: "/images/projects/hotel-booking.png",
+    liveDemo: "https://hotel-booking-system-one-chi.vercel.app/",
+    github: "https://github.com/cjhimanshu/hotel-booking-system",
+    featured: true,
+  },
+];
